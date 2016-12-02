@@ -38,14 +38,39 @@
 			<hr/>
 			<p>Name: <?php echo $uname; ?></p>
 			<p>Email: <?php echo $uemail; ?></p>
-			<p>...</p>
+
 		</div>
-		<div class="col-md-8">
-			<p>lorem ipsum dolum</p>
-			<p>lorem ipsum dolum</p>
-			<p>lorem ipsum dolum</p>
-			<p>...</p>
-		</div>
+		<h3>Registros Anteriores</h3>
+		<table class="table">
+			<thead>
+				<tr>
+					<th>Titulo</th>
+					<th>Direccion</th>
+					<th>Tipo</th>
+					<th>Precio</th>
+					<th>Accion</th>
+					<th>Descripcion</th>
+					<td>
+						--
+					</td>
+				</tr>
+			</thead>
+			<tbody>
+				<?php
+					foreach ($casas as $add) {
+						echo "<tr>
+							<td>{$add->titulo}</td>
+							<td>{$add->direccion}</td>
+							<td>{$add->tipo}</td>
+							<td>{$add->precio}</td>
+							<td>{$add->accion}</td>
+							<td>{$add->descripcion}</td>
+							</tr>";
+					}
+
+				 ?>
+			</tbody>
+
 	</div>
 </div>
 <script type="text/javascript" src="<?php echo base_url("assets/js/jquery-1.10.2.js"); ?>"></script>

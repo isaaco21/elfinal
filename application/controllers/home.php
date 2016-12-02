@@ -6,12 +6,15 @@ class home extends CI_Controller
   parent::__construct();
   $this->load->helper(array('url', 'html'));
   $this->load->library('session');
+  $this->load->model('add_model');
  }
 
  function index()
  {
-  $this->load->view('home_view');
- }
+   $data['casas'] = $this->add_model->listarAnuncios();
+   $tmp = $this->add_model->listarAnuncios();
+   $this->load->view('home_view', $data);
+  }
 
  function logout()
  {

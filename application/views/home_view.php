@@ -35,17 +35,40 @@
 
 <div class="container">
 	<div class="row">
-		<div class="col-md-4">
-			<h4>Notification</h4>
-			<p>plaisjolder</p>
-			<p>pleisjolder</p>
-			<p>pleisjolder</p>
-		</div>
 		<div class="col-md-8">
 			<h2>Bienvenido!!!</h2>
-			<p>*el veldader pleisjoldel*</p>
 		</div>
 	</div>
+	<h3>Registros Anteriores</h3>
+	<table class="table">
+		<thead>
+			<tr>
+				<th>Titulo</th>
+				<th>Direccion</th>
+				<th>Tipo</th>
+				<th>Precio</th>
+				<th>Accion</th>
+				<th>Descripcion</th>
+				<td>
+					--
+				</td>
+			</tr>
+		</thead>
+		<tbody>
+			<?php
+				foreach ($casas as $add) {
+					echo "<tr>
+						<td>{$add->titulo}</td>
+						<td>{$add->direccion}</td>
+						<td>{$add->tipo}</td>
+						<td>{$add->precio}</td>
+						<td>{$add->accion}</td>
+						<td>{$add->descripcion}</td>
+						</tr>";
+				}
+
+			 ?>
+		</tbody>
 </div>
 <script type="text/javascript" src="<?php echo base_url("assets/js/jquery-1.10.2.js"); ?>"></script>
 <script type="text/javascript" src="<?php echo base_url("assets/js/bootstrap.js"); ?>"></script>
