@@ -15,11 +15,11 @@
     <![endif]-->
   </head>
   <body>
-    
+
     <div class="container">
       <h3>Anuncios</h3>
       <div class="row">
-      <form method="post" action="<?php echo base_url('Add/Guardar'); ?>">
+      <form method="post" action="<?php echo site_url('Add/Guardar'); ?>">
       <div class="col-md-6">
         <div class="form-group input-group">
           <span class="input-group-addon">Titulo:</span>
@@ -33,7 +33,7 @@
 
         <div class="form-group input-group">
           <span class="input-group-addon">tipo:</span>
-          <select id="tipo" style="height:2.5em">
+          <select name="tipo" style="height:2.5em">
 						<option value="casa">Casa</option>
 						<option value="apartamento">Apartamento</option>
 						<option value="finca">finca</option>
@@ -47,7 +47,7 @@
 
         <div class="form-group input-group">
           <span class="input-group-addon">accion:</span>
-					<select id="accion" style="height:2.5em">
+					<select name="accion" style="height:2.5em">
 						<option value="vender">Vender</option>
 						<option value="alquilar">Alquilar</option>
 					</select>
@@ -60,7 +60,9 @@
 
         <div class="text-center">
           <button class="btn btn-primary" type="submit">Guardar</button>
+          <a type="button" href="<?php echo site_url('profile')?>" class="btn btn-primary">volver</a>
         </div>
+
 
       </div>
       </form>

@@ -20,7 +20,7 @@
   <body>
     <div class="container text-center" cl>
       <h3>Datos Guardados</h3>
-      <a href="<?php echo base_url('/add'); ?>" class="btn btn-info">Continuar</a>
+      <a href="<?php echo site_url('add'); ?>" class="btn btn-info">Continuar</a>
     </div>
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>

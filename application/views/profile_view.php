@@ -40,7 +40,6 @@
 			<p>Email: <?php echo $uemail; ?></p>
 
 		</div>
-		<h3>Registros Anteriores</h3>
 		<table class="table">
 			<thead>
 				<tr>
@@ -72,6 +71,9 @@
 			</tbody>
 
 	</div>
+</div>
+<div class="container">
+		<a type="button" href="<?php echo site_url('add')?>"class="btn btn-default">registro inmueble</a>
 </div>
 <script type="text/javascript" src="<?php echo base_url("assets/js/jquery-1.10.2.js"); ?>"></script>
 <script type="text/javascript" src="<?php echo base_url("assets/js/bootstrap.js"); ?>"></script>

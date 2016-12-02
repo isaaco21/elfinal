@@ -16,9 +16,9 @@ class Add extends CI_Controller{
     $this->load->view('add_view',$data);
   }
 
-  function guardar($add){
+  function guardar(){
     if ($_POST) {
-      $this->add_model->guardarAnuncio($_add);
+      $this->add_model->guardarAnuncio($_POST);
       $this->load->view('mensaje');
     }
   }
